@@ -513,6 +513,47 @@ footer {
   top: 67px;
 }
 
+.reviews {
+  max-width: 1440px;
+  width: 100%;
+  margin: 40px auto 150px;
+  padding: 0 12px;
+}
+.reviews h2 {
+  width: 480px;
+  padding-bottom: 60px;
+  margin-left: 80px;
+}
+
+.reviews-titles {
+  justify-content: center;
+  gap: 30px;
+}
+.reviews-titles .btn {
+  max-width: 1150px;
+  height: 86px;
+}
+.reviews-titles .btn:hover {
+  border-color: #4F4F4F;
+  color: #9AF03C;
+}
+
+.reviews-item {
+  background: #10100E;
+  border-radius: 15px;
+  width: 560px;
+  padding: 40px 50px;
+}
+.reviews-item h5 {
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+.reviews-item p {
+  font-weight: 400;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
 .container {
   margin-top: 100px;
 }
@@ -585,6 +626,28 @@ footer {
   }
   .model .btn-profile {
     display: none;
+  }
+  .reviews {
+    justify-content: center;
+  }
+  .reviews h2 {
+    margin: 0px;
+  }
+  .reviews-titles {
+    display: flex;
+    justify-content: center;
+  }
+  .reviews-titles {
+    justify-content: center;
+    gap: 30px;
+  }
+  .reviews-titles .btn {
+    max-width: 560px;
+    height: 86px;
+  }
+  .reviews-titles .btn:hover {
+    border-color: #4F4F4F;
+    color: #9AF03C;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -659,11 +722,18 @@ footer {
     left: 20px;
     font-size: 14px;
   }
+  .footer-logo {
+    position: relative;
+  }
   .footer-logo__link {
-    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .footer-logo__link img {
+    width: 143px;
   }
   .footer-logo .socials {
-    background: url(./assets/img/onebit-logo-phone.png) left/contain no-repeat;
     gap: 10px;
     justify-content: flex-end;
   }
@@ -714,6 +784,28 @@ footer {
   }
   .model p {
     font-size: 16px;
+  }
+  .reviews h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .reviews-item {
+    background: #080807;
+    border: 2px solid #4F4F4F;
+    border-radius: 15px;
+    padding: 24px;
+  }
+  .reviews-item h5 {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .reviews-item p {
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 0px;
+  }
+  .reviews-titles .btn {
+    height: 70px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -10,3 +10,4 @@ const btnHistoryBack = document.querySelector('#history-back');
 btnHistoryBack.addEventListener('click', ()=> {
   window.history.back();
   })
+
