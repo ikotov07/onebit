@@ -884,6 +884,7 @@ footer {
   .navbar-nav_country .dropdown-menu, .navbar-nav_language .dropdown-menu {
     border: 1px solid #4F4F4F;
     left: -10px;
+    position: absolute;
   }
   .navbar-nav_country .nav-link, .navbar-nav_language .nav-link {
     font-size: 14px;
