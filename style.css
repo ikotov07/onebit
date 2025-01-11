@@ -693,6 +693,11 @@ footer {
   background-color: #FFB444;
 }
 
+@media (min-width: 1025px) {
+  .status {
+    display: none;
+  }
+}
 @media screen and (max-width: 1299px) {
   header .container {
     padding: 50px 12px;
