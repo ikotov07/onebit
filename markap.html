@@ -13,7 +13,7 @@
 
 <body>
 
-    <header>
+    <header class="login">
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
@@ -25,6 +25,12 @@
                     <span class="navbar-toggler__line"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler__line"></span>
+                        <span class="navbar-toggler__line"></span>
+                        <span class="navbar-toggler__line"></span>
+                    </button>
+                    <div class="status status-verification-failed">верифікацію не пройдено</div>
                     <ul class="navbar-nav navbar-nav_country">
                         <li class="nav-item dropdown navbar-nav_medium">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -78,13 +84,19 @@
                         <a href="index.html" class="btn btn-primary btn-exit d-lg-none">вийти з акаунту</a>
                     </div>
                 </div>
-                <a href="#" class="btn btn-secondary btn-user">AE</a>
+                <a href="#" class="btn btn-secondary btn-user verefied">AE</a>
             </div>
         </nav>
     </header>
     <main class="wrapper">
         <div class="container">
             <div class="row g-4">
+                <div class="container">
+                    <div class="status status-looks-at">заявка розглядається</div>
+                    <div class="status status-unverified">неверифікований</div>
+                    <div class="status status-verified">верифікований</div>
+                    <div class="status status-verification-failed">верифікацію не пройдено</div>
+                </div>
                 <div class="col-lg-6 col-xl-4 mb-2">
                     <h3>1. Цвет бренда</h3>
                     <div class="color-list">
@@ -206,10 +218,8 @@
                         <li><a href="404.html">404</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-6 col-xl-4">
-
-                </div>
             </div>
+        </div>
         </div>
     </main>
     <footer>

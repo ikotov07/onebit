@@ -22,12 +22,32 @@ Use it to make something cool, have fun, and share what you've learned with othe
 body {
   background-color: #080807;
   color: #4F4F4F;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-size: 36px;
   font-family: "Geometria";
   color: #F7FFEE;
+}
+
+.status {
+  display: inline-block;
+  border: 1px solid #242424;
+  border-radius: 3px;
+  padding: 5px 25px 9px;
+  line-height: 1;
+}
+.status.status-looks-at {
+  color: #FFB444;
+}
+.status.status-verification-failed {
+  color: #FF3D3D;
+}
+.status.status-verified {
+  color: rgb(177, 255, 92);
 }
 
 .nav {
@@ -743,14 +763,50 @@ footer {
   header .navbar-brand img {
     max-height: 26px;
   }
+  .login .btn-user {
+    width: 44px;
+    height: 44px;
+    padding: 4px 4px 7px;
+    order: -1;
+    background-color: #141810;
+    color: rgb(177, 255, 92);
+    border: none;
+    position: relative;
+  }
+  .login .btn-user::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    right: -2px;
+    top: -2px;
+    border-radius: 50%;
+    background-color: #FF3D3D;
+  }
+  .login .btn-user.verefied::before {
+    background-color: rgb(177, 255, 92);
+  }
+  .login .btn-user:hover, .login .btn-user:focus {
+    background-color: #141810;
+    color: rgb(177, 255, 92);
+  }
+  .login .navbar-collapse .status {
+    display: block;
+  }
+  .login .navbar-nav_main-navigation {
+    margin: 90px 0 128px;
+  }
   .navbar-toggler {
-    background-color: #4F4F4F;
+    background-color: #141810;
     width: 44px;
     height: 44px;
     border-radius: 8px;
     position: relative;
   }
-  span.navbar-toggler__line {
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+  .navbar-toggler__line {
     width: 20px;
     height: 2px;
     display: flex;
@@ -761,10 +817,10 @@ footer {
     transform: translate(-50%, 0);
     transition: 0.4s;
   }
-  span.navbar-toggler__line:nth-child(2) {
+  .navbar-toggler__line:nth-child(2) {
     top: 21px;
   }
-  span.navbar-toggler__line:nth-child(3) {
+  .navbar-toggler__line:nth-child(3) {
     top: 27px;
   }
   [aria-expanded=true] .navbar-toggler__line {
@@ -777,6 +833,58 @@ footer {
   }
   [aria-expanded=true] .navbar-toggler__line:nth-child(3) {
     opacity: 0;
+  }
+  .navbar-nav .dropdown-menu {
+    border: none;
+  }
+  .navbar-nav .dropdown-menu .dropdown-item {
+    padding: 9px 25px;
+  }
+  .navbar-nav .dropdown-menu .dropdown-item::after {
+    display: none;
+  }
+  .navbar-nav_main-navigation {
+    margin: 30px 0 128px;
+    font-size: 20px;
+  }
+  .navbar-collapse {
+    margin: 0 -20px 0;
+    padding: 0px 20px;
+    z-index: 1;
+    transform: translate(0, -66px);
+    background-color: #080807;
+  }
+  .navbar-collapse .navbar-toggler {
+    margin-top: 22px;
+  }
+  .navbar-collapse::before {
+    content: "";
+    position: absolute;
+    top: 75px;
+    right: 0;
+    left: 0;
+    border: 1px solid #242424;
+  }
+  .navbar-collapse .status {
+    position: absolute;
+    left: 20px;
+    top: 100px;
+    display: none;
+  }
+  .navbar-nav_country, .navbar-nav_language {
+    position: absolute;
+    right: 20px;
+    top: 24px;
+  }
+  .navbar-nav_country .dropdown-menu, .navbar-nav_language .dropdown-menu {
+    border: 1px solid #4F4F4F;
+    left: -10px;
+  }
+  .navbar-nav_country .nav-link, .navbar-nav_language .nav-link {
+    font-size: 14px;
+  }
+  .navbar-nav_language {
+    right: 100px;
   }
   input {
     padding: 22.5px 20px;
