@@ -31,6 +31,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 36px;
   font-family: "Geometria";
   color: #F7FFEE;
+  font-weight: 400px;
 }
 
 .status {
@@ -195,6 +196,55 @@ a:hover {
   color: inherit;
   background-color: #9AF03C;
   border-color: #9AF03C;
+}
+
+.advantage-grid {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.advantages {
+  padding: 250px 0;
+}
+.advantages .container {
+  max-width: 1464px;
+  padding: 0 12px;
+  margin: 0 auto;
+}
+
+.advantage-template {
+  text-align: center;
+  padding-bottom: 100px;
+}
+.advantage-template_text {
+  padding-top: 20px;
+  color: #8E938C;
+}
+
+picture img {
+  width: 100%;
+  height: auto;
+}
+
+.advantage {
+  display: flex;
+  flex-shrink: 1;
+  background: #10100E;
+  border-radius: 15px;
+}
+.advantage .advantage-text {
+  width: 395px;
+  padding: 40px;
+}
+.advantage .advantage-text .advantage-titles {
+  margin: 0 0 16px 0;
+}
+.advantage .advantage-text .advantage-subtitles {
+  font-size: 20px;
+  line-height: 1.7;
+  color: #8E938C;
+  margin: 0;
 }
 
 label {
@@ -892,6 +942,40 @@ footer {
   .navbar-nav_language {
     right: 100px;
   }
+  .advantage-template {
+    padding-bottom: 60px;
+  }
+  .advantage-template h2 {
+    font-size: 32px;
+  }
+  .advantage-template_text {
+    font-size: 18px;
+  }
+  .advantage-grid {
+    display: grid;
+    grid-gap: 20px;
+  }
+  .advantages {
+    padding: 100px 20px;
+  }
+  .advantage {
+    align-items: center;
+    flex-direction: column;
+  }
+  .advantage .advantage-text {
+    max-width: 100%;
+    padding: 24px 24px 0 24px;
+  }
+  .advantage .advantage-text .advantage-titles {
+    font-size: 24px;
+  }
+  .advantage .advantage-text .advantage-subtitles {
+    font-size: 16px;
+  }
+  picture img {
+    width: 240px;
+    height: 272px;
+  }
   input {
     padding: 22.5px 20px;
   }
@@ -1047,6 +1131,13 @@ footer {
   }
   .reviews-titles .btn {
     height: 70px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .advantage-grid {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
