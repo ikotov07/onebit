@@ -314,28 +314,28 @@ picture img {
   padding: 60px 100px;
 }
 .city .city-kiev:hover {
-  background: url(./assets/img/kyiv.png) center no-repeat;
+  background: url(./assets/img/kyiv.png) center/cover no-repeat;
   animation: animation-cities 18s infinite;
 }
 .city .city-kharkiv {
   padding: 60px 100px;
 }
 .city .city-kharkiv:hover {
-  background: url(./assets/img/kharkiv.png) center no-repeat;
+  background: url(./assets/img/kharkiv.png) center/cover no-repeat;
   animation: animation-cities 18s infinite;
 }
 .city .city-lviv {
   padding: 60px 100px;
 }
 .city .city-lviv:hover {
-  background: url(./assets/img/lviv.png) center no-repeat;
+  background: url(./assets/img/lviv.png) center/cover no-repeat;
   animation: animation-cities 18s infinite;
 }
 .city .city-odesa {
   padding: 60px 100px;
 }
 .city .city-odesa:hover {
-  background: url(./assets/img/odesa.png) center no-repeat;
+  background: url(./assets/img/odesa.png) center/cover no-repeat;
   animation: animation-cities 18s infinite;
 }
 
