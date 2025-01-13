@@ -299,7 +299,7 @@ picture img {
   flex-direction: column;
   border-top: 1px solid #4F4F4F;
 }
-.city:last-child {
+.city:nth-child(5) {
   border-bottom: 1px solid #4F4F4F;
 }
 .city a {
@@ -311,47 +311,52 @@ picture img {
   padding: 60px 100px;
 }
 .city .city-kiev:hover {
-  background-image: url(./assets/img/kyiv.png);
-  animation: animation-kiev 5s infinite;
+  background: url(./assets/img/kyiv.png) center no-repeat;
+  animation: animation-cities 18s infinite;
 }
 .city .city-kharkiv {
   padding: 60px 100px;
 }
 .city .city-kharkiv:hover {
-  background-image: url(./assets/img/kharkiv.png);
+  background: url(./assets/img/kharkiv.png) center no-repeat;
+  animation: animation-cities 18s infinite;
 }
 .city .city-lviv {
   padding: 60px 100px;
 }
 .city .city-lviv:hover {
-  background-image: url(./assets/img/lviv.png);
+  background: url(./assets/img/lviv.png) center no-repeat;
+  animation: animation-cities 18s infinite;
 }
 .city .city-odesa {
   padding: 60px 100px;
 }
 .city .city-odesa:hover {
-  background-image: url(./assets/img/odesa.png);
+  background: url(./assets/img/odesa.png) center no-repeat;
+  animation: animation-cities 18s infinite;
 }
 
 .city-mobile {
   display: none;
 }
 
-@keyframes animation-kiev {
+@keyframes animation-cities {
   0% {
-    transform: translate(0, 0);
+    background-position-y: 100%;
+    background-position-y: bottom;
+  }
+  5% {
+    background-position-y: 100%;
+    background-position-y: bottom;
+  }
+  40% {
+    background-position-y: top;
   }
   50% {
-    transform: translate(0, 50px);
-  }
-  50% {
-    transform: translate(0, 90px);
-  }
-  50% {
-    transform: translate(0, 50px);
+    background-position-y: top;
   }
   100% {
-    transform: translate(0, 0);
+    background-position-y: bottom;
   }
 }
 label {
@@ -1293,7 +1298,7 @@ footer {
     background-image: none;
     animation: none;
   }
-  .city:last-child {
+  .city:nth-child(5) {
     border-bottom: 1px solid #4F4F4F;
   }
   .city-mobile {
