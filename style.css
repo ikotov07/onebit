@@ -339,6 +339,13 @@ picture img {
   animation: animation-cities 18s infinite;
 }
 
+.city-map {
+  margin-top: 50px;
+}
+.city-map iframe {
+  width: 100%;
+}
+
 .city-mobile {
   display: none;
 }
