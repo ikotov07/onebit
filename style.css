@@ -239,7 +239,8 @@ picture img {
   border-radius: 15px;
 }
 .advantage .advantage-text {
-  width: 395px;
+  width: 100%;
+  max-width: 395px;
   padding: 40px;
 }
 .advantage .advantage-text .advantage-titles {
