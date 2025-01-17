@@ -417,17 +417,17 @@ picture img {
   font-weight: 400;
   font-family: "Geometria";
 }
-.accordion-control .accordion-button {
-  font-size: 24px;
-  font-weight: 600;
-}
-.accordion-control .accordion-button:hover::after {
+.accordion-control .collapsed:hover::after {
   transition: 0.3s;
   transform: rotate(-90deg);
 }
-.accordion-control .accordion-button:hover::before {
+.accordion-control .collapsed:hover::before {
   transition: 0.3s;
   transform: rotate(0deg);
+}
+.accordion-control .accordion-button {
+  font-size: 24px;
+  font-weight: 600;
 }
 .accordion-control .accordion-button::after {
   content: "";
@@ -451,6 +451,10 @@ picture img {
 .accordion-control:hover {
   cursor: pointer;
   color: rgb(177, 255, 92);
+}
+.accordion-control [aria-expanded=true]::after {
+  transition: 3s;
+  transform: rotate(-90deg);
 }
 
 label {
