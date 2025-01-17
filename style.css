@@ -421,6 +421,14 @@ picture img {
   font-size: 24px;
   font-weight: 600;
 }
+.accordion-control .accordion-button:hover::after {
+  transition: 0.3s;
+  transform: rotate(-90deg);
+}
+.accordion-control .accordion-button:hover::before {
+  transition: 0.3s;
+  transform: rotate(0deg);
+}
 .accordion-control .accordion-button::after {
   content: "";
   width: 3px;
@@ -443,9 +451,6 @@ picture img {
 .accordion-control:hover {
   cursor: pointer;
   color: rgb(177, 255, 92);
-}
-.accordion-control:active {
-  display: block;
 }
 
 label {
