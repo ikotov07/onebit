@@ -5,20 +5,6 @@ $(document).ready(function(){
   });
 })
 
-const time = 0
-let greeting;
-
-if (time < 4) {
-    greeting = "Good night";
-} else if (time < 12) {
-    greeting = "Good morning";
-} else if (time < 16) {
-    greeting = "Good day";
-} else if (time < 24) {
-    greeting = "Good evening";
-} 
-
-console.log(greeting);
 
 
 window.addEventListener("scroll", function() {
