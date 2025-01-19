@@ -28,10 +28,9 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-size: 36px;
   font-family: "Geometria";
   color: #F7FFEE;
-  font-weight: 400px;
+  font-weight: 600;
 }
 
 .status {
@@ -214,8 +213,9 @@ a:hover {
 .steps,
 .cities,
 .questions,
-.FAQ {
-  padding: 125px 0;
+.FAQ,
+.banner {
+  padding-bottom: 250px;
 }
 
 .advantage-template {
@@ -414,16 +414,16 @@ picture img {
   align-items: center;
   position: relative;
   color: #F7FFEE;
-  font-weight: 400;
+  font-weight: 600;
   font-family: "Geometria";
 }
 .accordion-control .collapsed:hover::after {
   transition: 0.3s;
-  transform: rotate(-90deg);
+  transform: rotate(0deg);
 }
 .accordion-control .collapsed:hover::before {
   transition: 0.3s;
-  transform: rotate(0deg);
+  transform: rotate(-90deg);
 }
 .accordion-control .accordion-button {
   font-size: 24px;
@@ -431,18 +431,18 @@ picture img {
 }
 .accordion-control .accordion-button::after {
   content: "";
-  width: 3px;
-  height: 27px;
+  width: 27px;
+  height: 3px;
   background-color: rgb(177, 255, 92);
+  transform: rotate(90deg);
   top: 18px;
   right: 18px;
   position: absolute;
 }
 .accordion-control .accordion-button::before {
   content: "";
-  width: 3px;
-  height: 27px;
-  transform: rotate(90deg);
+  width: 27px;
+  height: 3px;
   background-color: rgb(177, 255, 92);
   top: 18px;
   right: 18px;
@@ -453,8 +453,8 @@ picture img {
   color: rgb(177, 255, 92);
 }
 .accordion-control [aria-expanded=true]::after {
-  transition: 3s;
-  transform: rotate(-90deg);
+  transition: 0.6s;
+  transform: rotate(0deg);
 }
 
 label {
@@ -747,6 +747,171 @@ header .nav-link:hover:after, header .nav-link.dropdown-toggle.show:after {
 
 .navbar-nav_language {
   padding: 0 30px;
+}
+
+.banner {
+  padding-top: 40px;
+}
+.banner h1 {
+  margin-bottom: 30px;
+}
+.banner h5 {
+  font-weight: 400;
+  color: #8A9385;
+  line-height: 36px;
+}
+.banner .container {
+  display: flex;
+}
+.banner-text {
+  max-width: 705px;
+  padding-bottom: 80px;
+}
+.banner-advatages {
+  max-width: 790px;
+  gap: 40px 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 80px;
+}
+.banner-advatages-item {
+  display: flex;
+  align-items: center;
+  color: #F7FFEE;
+  font-size: 18px;
+  font-weight: 600;
+  gap: 20px;
+}
+.banner-advatages-item .icon {
+  border-radius: 8px;
+  padding: 8px 8px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #141810;
+  border: none;
+}
+.banner-link {
+  font-size: 18px;
+  font-weight: 600;
+}
+.banner-link svg {
+  width: 10px;
+  height: 16px;
+  margin-left: 5px;
+}
+.banner-link:hover svg {
+  transform: rotate(90deg);
+}
+
+.banner-col-form {
+  padding: 40px;
+  border: 1px solid red;
+  margin-left: auto;
+  border-radius: 20px;
+}
+
+.form-exchange {
+  max-width: 460px;
+}
+.form-exchange input {
+  border: none;
+  outline: none;
+}
+.form-exchange .input-row {
+  background-color: #10100E;
+  border-radius: 12px;
+  color: #F7FFEE;
+  font-size: 24px;
+  padding: 36px;
+  width: 100%;
+  border: 1px solid #4F4F4F;
+  align-items: center;
+}
+.form-exchange .input-row input {
+  padding: 0;
+}
+.form-exchange label {
+  padding-bottom: 20px;
+}
+.form-exchange .give {
+  padding-bottom: 30px;
+}
+.form-exchange .btn-lager {
+  padding: 44px 124px;
+  font-size: 24px;
+}
+
+.exchange-info {
+  padding: 12px 0 40px 0;
+}
+.exchange-info-item {
+  display: flex;
+}
+.exchange-info-panel {
+  display: none;
+}
+.exchange-info__title {
+  font-size: 20px;
+  padding: 0 20px 0 0;
+}
+.exchange-info__value {
+  font-size: 20px;
+  color: rgb(177, 255, 92);
+}
+.exchange-info li {
+  list-style-type: none;
+}
+
+.nice-select {
+  border: 1px solid #4F4F4F;
+  background: #10100E;
+  padding: 16px 20px;
+  height: 56px;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  min-width: 201px;
+}
+.nice-select-search-box {
+  display: none;
+}
+.nice-select-search-box:hover {
+  background-color: none;
+}
+.nice-select .nice-select-dropdown {
+  background: none;
+}
+.nice-select .nice-select-dropdown .list {
+  background-color: #10100E;
+  padding: 0 24px;
+}
+.nice-select .nice-select-dropdown .list li {
+  border-bottom: 1px solid #4F4F4F;
+  font-size: 18px;
+  padding: 20px 0;
+}
+.nice-select .nice-select-dropdown .list img {
+  display: none;
+}
+.nice-select::after {
+  border-bottom: 2px solid #8A9385;
+  border-right: 2px solid #8A9385;
+  height: 10px;
+  width: 10px;
+  right: 20px;
+  top: 50%;
+}
+.nice-select .option:hover {
+  background: none;
+  color: rgb(177, 255, 92);
+}
+.nice-select .option.focus,
+.nice-select .option.selected.focus {
+  background: none;
 }
 
 footer {
@@ -1451,6 +1616,32 @@ footer {
     padding: 16px 0 40px;
     font-size: 18px;
     line-height: 26px;
+  }
+  .faq-title {
+    padding-bottom: 60px;
+  }
+  .faq-title h2 {
+    font-size: 32px;
+  }
+  .faq-title h5 {
+    font-size: 18px;
+  }
+  .faq-title .transfer {
+    display: none;
+  }
+  .accordion-control .accordion-button {
+    max-width: 276px;
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 400;
+  }
+  .accordion-control .accordion-button::after {
+    top: 4px;
+    right: -48px;
+  }
+  .accordion-control .accordion-button::before {
+    top: 4px;
+    right: -48px;
   }
 }
 @media screen and (max-width: 575px) {
