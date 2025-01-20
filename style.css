@@ -843,6 +843,14 @@ header .nav-link:hover:after, header .nav-link.dropdown-toggle.show:after {
   padding: 44px 124px;
   font-size: 24px;
 }
+.form-exchange .nice-select .current {
+  background-position: left center;
+  background-repeat: no-repeat;
+  padding-left: 36px;
+  background-size: 24px;
+  line-height: 24px;
+  display: block;
+}
 
 .exchange-info {
   padding: 12px 0 40px 0;
@@ -909,9 +917,87 @@ header .nav-link:hover:after, header .nav-link.dropdown-toggle.show:after {
   background: none;
   color: rgb(177, 255, 92);
 }
+
 .nice-select .option.focus,
 .nice-select .option.selected.focus {
   background: none;
+}
+
+.mart .container {
+  padding-bottom: 250px;
+}
+
+.mart-name {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 100px;
+}
+.mart-name .nice-select {
+  border: 1px solid #4F4F4F;
+  border-radius: 50px;
+  color: #F7FFEE;
+  background: #10100E;
+  height: 72px;
+  font-size: 24px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 215px;
+}
+.mart-name h2 {
+  font-weight: 500;
+}
+
+.mart-title {
+  width: 100%;
+  font-size: 20px;
+}
+.mart-title .mart-top {
+  font-weight: 400;
+}
+.mart-title .mart-top td {
+  padding-left: 40px;
+  padding-bottom: 30px;
+}
+.mart-title .mart-item {
+  font-weight: 600;
+}
+.mart-title .mart-item-title {
+  padding-right: 10px;
+  color: #F7FFEE;
+}
+.mart-title .mart-item .spread-green {
+  color: rgb(177, 255, 92);
+}
+.mart-title .mart-item .spread-red {
+  color: #FF3D3D;
+}
+.mart-title .mart-item .mart-trade {
+  display: flex;
+  justify-content: center;
+  width: 124px;
+  height: 47px;
+  padding: 8px 0px;
+  font-size: 18px;
+  color: #F7FFEE;
+  text-decoration: none;
+  border: 1px solid #4F4F4F;
+  border-radius: 5px;
+}
+.mart-title .mart-item .mart-trade:hover {
+  color: rgb(177, 255, 92);
+}
+.mart-title .mart-item td {
+  padding: 32.5px 0 32.5px 40px;
+}
+.mart-title .mart-item td img {
+  padding: 0 12px 5px 0;
+}
+
+.mart-item:nth-child(even) {
+  background-color: #10100E;
 }
 
 footer {
