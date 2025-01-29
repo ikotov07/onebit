@@ -1556,6 +1556,9 @@ footer {
   .step-temlate h5 {
     font-size: 18px;
   }
+  .steps {
+    padding-bottom: 100px;
+  }
   .step {
     flex-direction: column;
     align-items: center;
@@ -1748,7 +1751,7 @@ footer {
     height: 70px;
   }
   .cities {
-    padding: 60px 20px;
+    padding: 0 20px 100px 20px;
   }
   .city-title h1 {
     font-size: 32px;
@@ -1757,21 +1760,16 @@ footer {
   .city-title a {
     display: none;
   }
-  .city .city-kiev,
-  .city .city-kharkiv,
-  .city .city-lviv,
-  .city .city-odesa {
-    padding: 32px 24px;
+  .city a {
+    font-size: 20px;
+    height: 96px;
   }
-  .city .city-kiev:hover,
-  .city .city-kharkiv:hover,
-  .city .city-lviv:hover,
-  .city .city-odesa:hover {
+  .city-item {
+    padding: 60px 20px;
+  }
+  .city-item:hover {
     background-image: none;
     animation: none;
-  }
-  .city:nth-child(5) {
-    border-bottom: 1px solid #4F4F4F;
   }
   .city-mobile {
     display: block;
@@ -1815,16 +1813,16 @@ footer {
     font-weight: 400;
   }
   .accordion-control .accordion-button::after {
-    top: 4px;
-    right: -48px;
+    top: 14px;
+    right: -60px;
   }
   .accordion-control .accordion-button::before {
-    top: 4px;
-    right: -48px;
+    top: 14px;
+    right: -60px;
   }
 }
 @media screen and (max-width: 767px) {
-  .container {
+  .mart .container {
     display: none;
   }
   .mart-mb {
