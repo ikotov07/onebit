@@ -1201,6 +1201,117 @@ footer {
   display: none;
 }
 
+.review {
+  background-color: rgb(177, 255, 92);
+  padding: 200px 0 174px;
+  margin-bottom: 250px;
+  border-radius: 50px;
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+.swiper .swiper-pagination {
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+.swiper .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #F7FFEE;
+  opacity: 1;
+  border-radius: 12px;
+  margin: 0 12px;
+  transition: 0.3s;
+}
+.swiper .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #42882A;
+  width: 160px;
+}
+
+.swiper-wrapper {
+  align-items: flex-end;
+}
+
+.swiper-slide {
+  color: #10100E;
+  padding: 0 50px;
+  padding: 50px 65px 72px;
+}
+
+.review-text {
+  font-size: 32px;
+  margin-bottom: 80px;
+  position: relative;
+}
+.review-text::before {
+  content: "";
+  position: absolute;
+  width: 136px;
+  height: 112px;
+  top: -48px;
+  left: -61px;
+  background: url(./assets/img/icon-blockquote.svg) center/contain no-repeat;
+  z-index: -1;
+}
+
+.review-info {
+  display: flex;
+  flex-direction: column;
+  padding-right: 200px;
+}
+
+.review-autor {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-style: normal;
+}
+
+.review-date {
+  font-size: 20px;
+  color: #42882A;
+}
+
+.swiper-navigation {
+  display: flex;
+  position: absolute;
+  right: 0;
+  bottom: 72px;
+  gap: 20px;
+  height: 74px;
+  background: rgb(177, 255, 92);
+  z-index: 1;
+  padding-right: 65px;
+  padding-left: 20px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: static;
+  border: 1px solid #42882A;
+  border-radius: 50%;
+  height: 74px;
+  width: 74px;
+  margin-top: 0;
+}
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  content: "";
+  width: 23px;
+  height: 16px;
+  background: url(./assets/img/icon-arrow.svg);
+}
+
+.swiper-button-next::after {
+  transform: rotate(180deg);
+}
+
 .model {
   width: 100%;
   max-width: 950px;
