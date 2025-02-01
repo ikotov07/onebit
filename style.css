@@ -1813,10 +1813,12 @@ footer {
     font-weight: 400;
   }
   .accordion-control .accordion-button::after {
+    width: 20px;
     top: 14px;
     right: -60px;
   }
   .accordion-control .accordion-button::before {
+    width: 20px;
     top: 14px;
     right: -60px;
   }
